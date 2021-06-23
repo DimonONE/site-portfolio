@@ -1,0 +1,449 @@
+.App {
+  text-align: center;
+  a {
+    text-decoration-line: none;
+  }
+  background: #e901eb;
+  background: -webkit-linear-gradient(to right, #fcdd76, #45161c, #0000ff);
+  background: linear-gradient(to right, #45161c, #fcdd76, #45161c);
+
+  font-family: Courier New, monospace;
+}
+
+.header,
+.footer {
+  padding: 7px 20px;
+
+  .logo {
+    font-family: "Rubik One", sans-serif;
+    font-size: 30px;
+    background: #2e2f45;
+    display: table;
+    margin: auto;
+    color: white;
+    border-radius: 5px;
+    mix-blend-mode: multiply;
+    padding: 5px 10px;
+  }
+}
+
+.main {
+  padding: 7px 15px;
+  background: #db1558;
+  background: -webkit-linear-gradient(to right, #db1558, #87124d, #340e40);
+  background: linear-gradient(to right, #db1558, #87124d, #340e40);
+  border-radius: 15% 15% 1% 1%;
+
+  .about-myself,
+  .brief-information,
+  .professional-skills,
+  .education,
+  .showing-of-work {
+    margin-top: 50px;
+  }
+
+  .header {
+    margin: auto;
+    margin-bottom: 10px;
+    font-family: Courier New, monospace;
+    font-style: italic;
+    font-size: 27px;
+    background: #3bcca088;
+    text-shadow: 1px 3px 2px rgb(122, 40, 40);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    mix-blend-mode: multiply;
+    padding: 7px 5px;
+  }
+
+  .contacts {
+    display: flex;
+    padding: 25px 0;
+    h2,
+    p {
+      margin: 0;
+    }
+
+    .left {
+      background: linear-gradient(135deg, #f8b777 25%, #c2bdab70 50%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border-image: linear-gradient(135deg, #fcdd76 20%, #fdeaa8 70%);
+      border: 3px solid transparent;
+      border-image: linear-gradient(135deg, #ff8000 20%, #800080 70%);
+      border-image-slice: 10;
+    }
+
+    .right {
+      background: linear-gradient(135deg, #ff8000 20%, #800080 70%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border-image: linear-gradient(135deg, #ff8000 20%, #800080 70%);
+      border: 3px solid transparent;
+      border-image: linear-gradient(135deg, #ff8000 20%, #800080 70%);
+      border-image-slice: 2;
+
+      // p:hover::after {
+      //   position: absolute;
+      //   text-align: center;
+      //   margin-left: 10px;
+      //   font-size: 12px;
+      //   content: "<- Копировать";
+      //   background: linear-gradient(
+      //     135deg,
+      //     green 20%,
+      //     rgba(0, 128, 0, 0.829) 80%
+      //   );
+      //   -webkit-background-clip: text;
+      //   display: inline-block;
+      //   margin-top: 5px;
+      // }
+
+      p:hover {
+        cursor: pointer;
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.596) 20%,
+          #fff 80%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+      }
+    }
+
+    .left,
+    .right {
+      display: grid;
+      margin: auto;
+      border-image-slice: 2;
+      display: inline-block;
+      width: 270px;
+
+      h2 {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+
+        p {
+          display: flex;
+          line-height: 28px;
+          text-align: center;
+          font-size: 19px;
+          margin-left: 7px;
+        }
+      }
+    }
+
+    .block__image-user {
+      width: 150px;
+      height: 150px;
+      margin: auto;
+      padding: 13px;
+      display: block;
+
+      background: linear-gradient(135deg, #ff8000 20%, #800080 70%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border-image: linear-gradient(135deg, #ff8000 20%, #800080 70%);
+      border: 3px solid transparent;
+      border-image: linear-gradient(135deg, #ff8000 20%, #800080 70%);
+      border-image-slice: 2;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 1px 1px 12px rgb(226, 133, 11);
+      }
+    }
+
+    .status-programer {
+      font-size: x-large;
+      font-family: "Rubik One", sans-serif;
+      background: #828394;
+      display: table;
+      margin: auto;
+      margin-top: 21px;
+      color: white;
+      border-radius: 5px;
+      mix-blend-mode: multiply;
+      padding: 1px 4px;
+    }
+  }
+
+  .info-about-me,
+  .showing-of-work {
+    padding-top: 30px;
+    border-top: 1px solid #503939;
+  }
+
+  .info-about-me {
+    .brief-information {
+      .content {
+        width: 559px;
+        margin: auto;
+      }
+      .text-info {
+        font-size: initial;
+        font-weight: 600;
+        color: rgb(223, 203, 203);
+      }
+    }
+
+    .block-skills {
+      width: 35%;
+      height: max-content;
+      padding: 5px 8px;
+      box-shadow: 2px 2px 11px #e901eb;
+
+      .skill-container {
+        display: flex;
+        background: #000;
+        background: #db1558;
+        background: -webkit-linear-gradient(
+          to right,
+          #db1558,
+          #87124d,
+          #340e40
+        );
+        background: linear-gradient(to right, #db1558, #87124d, #340e40);
+        height: 20px;
+        margin: 5px 0px;
+        box-shadow: 2px 2px 11px #3b373b;
+        align-items: center;
+
+        p {
+          white-space: nowrap;
+          line-height: 100%;
+          width: max-content;
+          margin-left: auto;
+          text-align: center;
+          padding: 0 15px;
+          color: #e901eb;
+        }
+
+        .skill {
+          display: block;
+          border-radius: 7%;
+
+          background: #bb256c;
+          background: -webkit-linear-gradient(
+            to right,
+            #bb256c,
+            #e44429,
+            #ca335d
+          );
+          background: linear-gradient(to right, #bb256c, #e44429, #ca335d);
+        }
+      }
+    }
+
+    .professional-skills {
+      padding: 30px 0 0;
+      margin: 20px 0;
+      .block {
+        display: inline-flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        h2 {
+          margin: auto;
+          margin-bottom: 7px;
+          font-style: italic;
+          text-transform: capitalize;
+          font-size: x-large;
+          font-family: "Rubik One", sans-serif;
+          background: #9a9ba8;
+          display: table;
+          color: white;
+          border-radius: 5px;
+          mix-blend-mode: multiply;
+          padding: 1px 5px;
+        }
+
+        .block__skill {
+          width: 28%;
+          padding: 20px;
+          margin: 10px;
+          background: #4b70af85;
+          box-shadow: 1px 1px 11px rgb(59, 51, 51);
+        }
+      }
+    }
+
+    .about-myself {
+      .content {
+        padding: 20px 0;
+      }
+      .hobby {
+        display: block;
+        margin: auto;
+        width: 80%;
+
+        .text-info {
+          color: rgb(223, 203, 203);
+          font-size: 18px;
+          font-family: FreeMono, monospace;
+        }
+      }
+    }
+  }
+
+  .showing-of-work {
+    .work-prew {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+
+      .work-prew__block {
+        display: block;
+        width: 45%;
+        padding: 5px;
+        margin-bottom: 40px;
+        height: 100%;
+
+        box-shadow: 1px 1px 11px #2de9e4;
+        background: #e901eb;
+        background: -webkit-linear-gradient(
+          to right,
+          #e901eb,
+          #6011e1,
+          #2de9e4
+        );
+        background: linear-gradient(to right, #e901eb, #6011e1, #2de9e4);
+
+        .block-img {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+
+          .image-work {
+            display: block;
+            width: 47%;
+            height: auto;
+            background-color: rgb(226, 133, 11);
+            margin-bottom: 17px;
+
+            img {
+              width: 100%;
+              height: 100%;
+              border-radius: 5%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+    .see-big {
+      width: max-content;
+      margin: auto;
+      box-shadow: 1px 1px 2px rgba(92, 85, 85, 0.726);
+      border-radius: 5px 25px 25px 5px;
+      background: rgb(206, 158, 2);
+      padding: 9px 8px;
+      margin-bottom: 10px;
+
+      a {
+        color: rgb(182, 113, 11);
+        font-size: 19px;
+        font-weight: 800;
+      }
+    }
+  }
+  .education {
+    .years-of-study {
+      display: flex;
+      align-items: center;
+      padding-left: 40px;
+
+      h3 {
+        font-family: Comic Sans MS, Comic Sans, cursive;
+        font-size: 14px;
+        margin-right: 20px;
+      }
+
+      .text-info {
+        font-family: Brush Script MT, Brush Script Std, cursive;
+        width: 55%;
+        text-align: left;
+        color: rgba(0, 0, 0, 0.925);
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .main {
+    .showing-of-work {
+      .work-prew {
+        display: block;
+
+        .work-prew__block {
+          display: block;
+          margin: auto;
+        }
+      }
+    }
+
+    .contacts {
+      display: block;
+      padding: 10px 0 0 0;
+      .left {
+        display: none;
+      }
+      .right {
+        margin: 10px 0 25px;
+      }
+    }
+
+    .info-about-me {
+      .block-skills {
+        width: 60%;
+
+        p {
+          font-size: small;
+        }
+      }
+    }
+
+    .showing-of-work {
+      .work-prew {
+        .work-prew__block {
+          width: 97%;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .main {
+    .info-about-me {
+      .block-skills {
+        width: auto;
+
+        p {
+          font-size: small;
+        }
+      }
+    }
+    .info-about-me {
+      .brief-information {
+        .content {
+          width: 80%;
+          margin: auto;
+        }
+      }
+    }
+    .education {
+      .years-of-study {
+        .text-info {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
