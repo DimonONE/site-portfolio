@@ -200,11 +200,14 @@ export const InfoAboutMe = (props: any) => {
       <div className="about-myself">
         <h2 className="head header">{locatlState.aboutMyself.head}</h2>
         <div className="content">
-          {locatlState.aboutMyself.aboutMy.map((e) => (
-            <span className="hobby">
-              <p className="text-info">{e.text}</p>
-            </span>
-          ))}
+          <h2 className="hobby">{locatlState.aboutMyself.hobby}</h2>
+          <div className="block">
+            {locatlState.aboutMyself.aboutMy.map((e) => (
+              <span className="hobby">
+                <p className="text-info">{e.text}</p>
+              </span>
+            ))}
+          </div>
         </div>
       </div>
       <div className="education">

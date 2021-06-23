@@ -274,8 +274,17 @@
     }
 
     .about-myself {
+      font-family: FreeMono, monospace;
+
       .content {
+        display: flex;
         padding: 20px 0;
+
+        > .hobby {
+          font-size: 19px;
+          margin-top: 60px;
+          font-weight: 800;
+        }
       }
       .hobby {
         display: block;
@@ -285,7 +294,6 @@
         .text-info {
           color: rgb(223, 203, 203);
           font-size: 18px;
-          font-family: FreeMono, monospace;
         }
       }
     }
@@ -404,6 +412,17 @@
 
         p {
           font-size: small;
+        }
+      }
+
+      .about-myself .content {
+        padding-top: 5px;
+        display: block;
+        padding: 20px 0;
+
+        > .hobby {
+          margin-top: 0;
+          width: 50%;
         }
       }
     }
