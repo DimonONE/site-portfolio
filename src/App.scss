@@ -1,4 +1,11 @@
+@import "styles/index";
+
 .App {
+// settings
+--default-background: #fff;
+--header-background: #1D1A1F;
+
+
   text-align: center;
   a {
     text-decoration-line: none;
@@ -12,22 +19,16 @@
 .footer {
   padding: 7px 20px;
 
-  .logo {
-    font-family: "Rubik One", sans-serif;
-    font-size: 30px;
-    background: #2e2f45;
-    display: table;
-    margin: auto;
-    color: white;
-    border-radius: 5px;
-    mix-blend-mode: multiply;
-    padding: 5px 10px;
+  .logo img  {
+    //background: url('./img/icons/Logo.png');
+    width: 140px;
+    height: 140px;
   }
 }
 
 .main {
   padding: 7px 15px;
-  background: #ffffff;
+  background: var(--default-background);
 
   .about-myself,
   .brief-information,
@@ -43,7 +44,7 @@
     font-family: Courier New, monospace;
     font-style: italic;
     font-size: 27px;
-    background: #3bcca088;
+    background: var(--header-background);
     text-shadow: 1px 3px 2px rgb(122, 40, 40);
     color: rgb(255, 255, 255);
     border-radius: 5px;
@@ -77,22 +78,6 @@
       border: 3px solid transparent;
       border-image: linear-gradient(135deg, #ff8000 20%, #800080 70%);
       border-image-slice: 2;
-
-      // p:hover::after {
-      //   position: absolute;
-      //   text-align: center;
-      //   margin-left: 10px;
-      //   font-size: 12px;
-      //   content: "<- Копировать";
-      //   background: linear-gradient(
-      //     135deg,
-      //     green 20%,
-      //     rgba(0, 128, 0, 0.829) 80%
-      //   );
-      //   -webkit-background-clip: text;
-      //   display: inline-block;
-      //   margin-top: 5px;
-      // }
 
       p:hover {
         cursor: pointer;
